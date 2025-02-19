@@ -28,6 +28,12 @@ RUN composer install --no-dev --optimize-autoloader
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
+# 🔥 Set Apache to serve from public/ folder
+RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|g' /etc/apache2/sites-available/000-default.conf
+
+# 🔥 Restart Apache to apply changes
+RUN service apache2 restart
+
 # Expose port 80 for Apache
 EXPOSE 80
 
