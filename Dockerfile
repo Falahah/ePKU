@@ -33,9 +33,6 @@ RUN chown -R www-data:www-data /var/www/html \
 # Change Apache DocumentRoot to Laravel public directory
 RUN sed -i 's|/var/www/html|/var/www/html/public|g' /etc/apache2/sites-available/000-default.conf
 
-# Reload Apache to apply changes
-RUN apachectl -k restart
-
 # Expose port 80 for Apache
 EXPOSE 80
 
