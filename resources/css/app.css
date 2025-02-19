@@ -1,0 +1,303 @@
+/* Import Poppins font from Google Fonts (CDN) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #d8dff1; 
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: #396dcdc3 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar-brand span {
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-toggler-icon {
+    border: none;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    
+}
+.btn {
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* Card Styling */
+.card {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.69);
+    padding: 20px;
+    border: none;
+    border-radius: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Header Styling */
+.card-header {
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #ffffff00; 
+    color: #000000; 
+    padding: 15px;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+}
+
+/* Card Body Styling */
+.card-body {
+    padding: 1.25rem;
+}
+
+/* Center Text within Card */
+.text-center {
+    text-align: center;
+}
+
+/* Book Appointment Button Styling */
+.btn-book-appointment {
+    background-color: #28a745; 
+    color: #fff;
+    border: none;
+}
+
+/* Logout Button Styling */
+.btn-logout {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+}
+
+/* Button Group Styling */
+.btn-group {
+    margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #396dcdc3;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center; 
+    max-height: fit-content;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer hr {
+    background-color: #fff;
+}
+
+/* Footer Columns */
+footer .container > div {
+    flex: 1;
+    padding: 0 15px;
+}
+
+/* Footer Contact Information */
+footer .container > div p {
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 40px;
+    }
+
+    .navbar-brand span {
+        font-size: 18px;
+    }
+
+    footer .container > div p {
+        font-size: 12px;
+    }
+}
+
+.user-actions-section {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-actions-section .container-top {
+    max-width: 100%; 
+    margin: 0 auto; 
+}
+
+/*login page*/
+.login-page .card {
+    border: none;
+    max-width: fit-content;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-page .card-header {
+    background-color: #EA5514;
+    color: white;
+    border-radius: 12px 12px 0 0;
+}
+
+.login-page .card-body {
+    padding: 20px;
+}
+
+.login-page .form-control {
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+}
+
+.login-page .form-check-input {
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+}
+
+.login-page .btn-primary {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.login-page .btn-primary:hover {
+    background-color: #c43d0b;
+}
+
+.login-page .btn-link {
+    color: #EA5514;
+}
+
+/* Booking History Tabs Styling */
+
+/* Container */
+#bookingHistoryTabs {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0;
+}
+
+/* Tab Links */
+#bookingHistoryTabs .nav-link {
+    color: #555;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-bottom: none;
+    background-color: #f8f9fa; 
+    transition: all 0.3s ease;
+    margin-bottom: -1px;
+}
+
+#bookingHistoryTabs .nav-link:hover {
+    color: #333;
+    background-color: #e9ecef;
+}
+
+#bookingHistoryTabs .nav-link.active {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff #007bff #fff;
+}
+
+/* Tab Content */
+.tab-content {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-top: none; 
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.show {
+    display: block;
+}
+
+/* Button */
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+/* Responsive Design */
+@media (max-width: 767.98px) {
+    #bookingHistoryTabs .nav-link {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+.dropdown-menu {
+    max-height: 500px;
+    overflow-y: auto;
+    width: 250px;
+    left: 0;
+    right: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    white-space: normal;
+    font-size: 0.875rem;
+    padding: 10px 15px; 
+}
+
+.dropdown-item:hover {
+    background-color: rgba(0, 123, 255, 0.1); 
+    color: #007bff; 
+    border-left: 3px solid #007bff;
+}
+
+.badge-danger {
+    background-color: red;
+    color: white;
+}
+
+.dropdown-divider {
+    margin: 0;
+}
+
+.margin-left {
+        margin-left: 150px;
+}
+    
+.margin-right {
+    margin-right: -100px;
+}
